@@ -1,0 +1,19 @@
+
+table {
+    border-collapse: separate;
+    border-spacing: 4px; /* cellspacing */
+
+}
+
+table td, table th {
+    padding: 2px; /* cellpadding */
+
+}
+
+table1 {
+     display: table;
+     margin-top:10px;
+     margin-bottom:5px;
+     border-spacing: 1px;
+     
+}

@@ -1,0 +1,14 @@
+services:
+    dmzx.forumgoal.acplistener:
+        class: dmzx\forumgoal\event\acp_listener
+        tags:
+            - { name: event.listener }
+    dmzx.forumgoal.listener:
+        class: dmzx\forumgoal\event\listener
+        arguments:
+            - @template
+            - @config
+            - @dbal.conn
+            - @user
+        tags:
+            - { name: event.listener }

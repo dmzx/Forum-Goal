@@ -1,0 +1,33 @@
+{
+	"name": "dmzx/forumgoal",
+	"type": "phpbb-extension",
+	"description": "The Forum Goal extension display your goals for posts, topics, users and attachments.",
+	"homepage": "http://www.dmzx-web.net",
+	"version": "1.0.0",
+	"time": "2015-06-20",
+	"keywords": ["phpbb", "extension", "forum goal"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "dmzx",
+			"homepage": "http://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
+			"role": "Extension Developer"
+		},
+		{
+			"name": "Ulrik Christensen",
+			"homepage": "http://www.phpbb3bbcodes.com",
+			"email": "phpbb3bbcodes@gmail.com",
+			"role": "Author"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Forum Goal",
+		"soft-require": {
+			"phpbb/phpbb": "3.1.*"
+		}
+	}
+}
