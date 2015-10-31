@@ -24,9 +24,9 @@
 	"require": {
 		"php": ">=5.3.3"
 	},
-		"version-check": {
-			"host": "www.dmzx-web.net",
-			"directory": "/versions",
-			"filename": "forumgoal_version.json"
-		}
+	"version-check": {
+		"host": "www.dmzx-web.net",
+		"directory": "/versions",
+		"filename": "forumgoal_version.json"
+	}
 }
