@@ -1,5 +1,7 @@
 # phpBB Forum Goal Extension
 
+[![Build Status](https://travis-ci.org/dmzx/Forum-Goal.svg?branch=master)](https://travis-ci.org/dmzx/Forum-Goal)
+
 ## Install
 
 1. Download the latest release and Unzip the downloaded release.
