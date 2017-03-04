@@ -1,78 +1,78 @@
 <!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
 <div class="forabg">
 	<div class="inner">
-	<ul class="topiclist">
-		<li class="header">
-			<dl class="icon">
-				<dt>{L_FORUM_GOALS}</dt>
-				<dd></dd>
-			</dl>
-		</li>
-	</ul>
-	<ul class="topiclist forums">
-	<li>
-	<table class="table1" style="text-align: left; width: 100%;">
-		<tbody>
-			<!-- IF FPG_ENABLE -->
-			<tr>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_POST_GOAL} <strong>{FORUM_POST_GOAL}</strong></td>
-				<td style="width: 160px; font-size:12px;">{TOTAL_POSTS}</td>
-				<td style="width: 160px; font-size:12px;"><!-- IF FORUM_POST_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_POST_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
-				<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_POST_PERCENT < 34 -->red<!-- ELSEIF FORUM_POST_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_POST_PERCENT < 101 -->green<!-- ELSEIF FORUM_POST_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_POST_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_POST_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_POST_PERCENT}<!-- IF FORUM_POST_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
-			</tr>
-			<!-- ENDIF -->
-			<!-- IF FTG_ENABLE -->
-			<tr>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_TOPIC_GOAL} <strong>{FORUM_TOPIC_GOAL}</strong></td>
-				<td style="width: 160px; font-size:12px;">{TOTAL_TOPICS}</td>
-				<td style="width: 160px; font-size:12px;"><!-- IF FORUM_TOPIC_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_TOPIC_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
-				<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_TOPIC_PERCENT < 34 -->red<!-- ELSEIF FORUM_TOPIC_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_TOPIC_PERCENT < 101 -->green<!-- ELSEIF FORUM_TOPIC_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_TOPIC_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_TOPIC_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_TOPIC_PERCENT}<!-- IF FORUM_TOPIC_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
-			</tr>
-			<!-- ENDIF -->
-			<!-- IF FUG_ENABLE -->
-			<tr>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_USER_GOAL} <strong>{FORUM_USER_GOAL}</strong></td>
-				<td style="width: 160px; font-size:12px;">{TOTAL_USERS}</td>
-				<td style="width: 160px; font-size:12px;"><!-- IF FORUM_USER_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_USER_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
-				<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_USER_PERCENT < 34 -->red<!-- ELSEIF FORUM_USER_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_USER_PERCENT < 101 -->green<!-- ELSEIF FORUM_USER_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_USER_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_USER_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_USER_PERCENT}<!-- IF FORUM_USER_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
-			</tr>
-			<!-- ENDIF -->
-			<!-- IF FFG_ENABLE -->
-			<tr>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_FILES_GOAL} <strong>{FORUM_FILES_GOAL}</strong></td>
-				<td style="width: 160px; font-size:12px;">{TOTAL_FILES}</td>
-				<td style="width: 160px; font-size:12px;"><!-- IF FORUM_FILES_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_FILES_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
-				<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_FILES_PERCENT < 34 -->red<!-- ELSEIF FORUM_FILES_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_FILES_PERCENT < 101 -->green<!-- ELSEIF FORUM_FILES_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_FILES_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_FILES_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_FILES_PERCENT}<!-- IF FORUM_FILES_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
-			</tr>
-			<!-- ENDIF -->
-			<!-- IF FGG_ENABLE and TOTAL_IMAGES -->
-			<tr>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_GALLERY_GOAL} <strong>{FORUM_GALLERY_GOAL}</strong></td>
-				<td style="width: 160px; font-size:12px;">{TOTAL_IMAGES}</td>
-				<td style="width: 160px; font-size:12px;"><!-- IF FORUM_GALLERY_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_GALLERY_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO} <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /></em><!-- ENDIF --></td>
-				<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_GALLERY_PERCENT < 34 -->red<!-- ELSEIF FORUM_GALLERY_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_GALLERY_PERCENT < 101 -->green<!-- ELSEIF FORUM_GALLERY_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_GALLERY_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_GALLERY_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_GALLERY_PERCENT}<!-- IF FORUM_GALLERY_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
-			</tr>
-			<!-- ENDIF -->
-			<!-- IF FTVG_ENABLE -->
-			<tr>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_VIEW_GOAL} <strong>{FORUM_VIEW_GOAL}</strong></td>
-				<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_VIEWS} <strong>{TOTAL_VIEWS}</strong></td>
-				<td style="width: 160px; font-size:12px;"><!-- IF FORUM_VIEW_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_VIEW_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
-				<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_VIEW_PERCENT < 34 -->red<!-- ELSEIF FORUM_VIEW_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_VIEW_PERCENT < 101 -->green<!-- ELSEIF FORUM_VIEW_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_VIEW_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_VIEW_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_VIEW_PERCENT}<!-- IF FORUM_VIEW_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
-			</tr>
-			<!-- ENDIF -->
-			<!-- IF (DONATION_INDEX_ENABLE and S_DONATE_ENABLED and DONATION_INDEX_BOTTOM) and (DONATION_ACHIEVEMENT_ENABLE or DONATION_GOAL_ENABLE) -->
-		 <tr>
-			<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_DONATION_GOAL} <strong>{DONATION_GOAL}</strong> {DONATION_GOAL_CURRENCY}</td>
-			<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_DONATIONS} <strong>{DONATION_ACHIEVEMENT}</strong> {DONATION_GOAL_CURRENCY}</td>
-			<td style="width: 160px; font-size:12px;"><!-- IF DONATION_GOAL_NUMBER < 100 -->{L_GOAL_REMAINING} <strong>{DONATION_GOAL_REST}</strong> {DONATION_GOAL_CURRENCY}<!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
-			<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black;border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('/forum_goal_<!-- IF DONATION_GOAL_NUMBER < 34 -->red<!-- ELSEIF DONATION_GOAL_NUMBER < 67 -->yellow<!-- ELSE -->green<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF DONATION_GOAL_NUMBER < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{DONATION_GOAL_NUMBER}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{DONATION_GOAL_NUMBER}<!-- IF DONATION_GOAL_NUMBER >= 5 -->%<!-- ENDIF --></span></div></div></td>
-		 </tr>
-		 <!-- ENDIF -->
-		</tbody>
-	</table>
-	</li>
-	</ul>
+		<ul class="topiclist">
+			<li class="header">
+				<dl class="row-item">
+					<dt>{L_FORUM_GOALS}</dt>
+					<dd></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<li>
+				<table class="table1" style="text-align: left; width: 100%;">
+					<tbody>
+						<!-- IF FPG_ENABLE -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_POST_GOAL} <strong>{FORUM_POST_GOAL}</strong></td>
+							<td style="width: 160px; font-size:12px;">{TOTAL_POSTS}</td>
+							<td style="width: 160px; font-size:12px;"><!-- IF FORUM_POST_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_POST_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_POST_PERCENT < 34 -->red<!-- ELSEIF FORUM_POST_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_POST_PERCENT < 101 -->green<!-- ELSEIF FORUM_POST_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_POST_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_POST_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_POST_PERCENT}<!-- IF FORUM_POST_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+						<!-- IF FTG_ENABLE -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_TOPIC_GOAL} <strong>{FORUM_TOPIC_GOAL}</strong></td>
+							<td style="width: 160px; font-size:12px;">{TOTAL_TOPICS}</td>
+							<td style="width: 160px; font-size:12px;"><!-- IF FORUM_TOPIC_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_TOPIC_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_TOPIC_PERCENT < 34 -->red<!-- ELSEIF FORUM_TOPIC_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_TOPIC_PERCENT < 101 -->green<!-- ELSEIF FORUM_TOPIC_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_TOPIC_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_TOPIC_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_TOPIC_PERCENT}<!-- IF FORUM_TOPIC_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+						<!-- IF FUG_ENABLE -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_USER_GOAL} <strong>{FORUM_USER_GOAL}</strong></td>
+							<td style="width: 160px; font-size:12px;">{TOTAL_USERS}</td>
+							<td style="width: 160px; font-size:12px;"><!-- IF FORUM_USER_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_USER_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_USER_PERCENT < 34 -->red<!-- ELSEIF FORUM_USER_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_USER_PERCENT < 101 -->green<!-- ELSEIF FORUM_USER_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_USER_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_USER_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_USER_PERCENT}<!-- IF FORUM_USER_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+						<!-- IF FFG_ENABLE -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_FILES_GOAL} <strong>{FORUM_FILES_GOAL}</strong></td>
+							<td style="width: 160px; font-size:12px;">{TOTAL_FILES}</td>
+							<td style="width: 160px; font-size:12px;"><!-- IF FORUM_FILES_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_FILES_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_FILES_PERCENT < 34 -->red<!-- ELSEIF FORUM_FILES_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_FILES_PERCENT < 101 -->green<!-- ELSEIF FORUM_FILES_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_FILES_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_FILES_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_FILES_PERCENT}<!-- IF FORUM_FILES_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+						<!-- IF FGG_ENABLE and TOTAL_IMAGES -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_GALLERY_GOAL} <strong>{FORUM_GALLERY_GOAL}</strong></td>
+							<td style="width: 160px; font-size:12px;">{TOTAL_IMAGES}</td>
+							<td style="width: 160px; font-size:12px;"><!-- IF FORUM_GALLERY_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_GALLERY_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO} <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /></em><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_GALLERY_PERCENT < 34 -->red<!-- ELSEIF FORUM_GALLERY_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_GALLERY_PERCENT < 101 -->green<!-- ELSEIF FORUM_GALLERY_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_GALLERY_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_GALLERY_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_GALLERY_PERCENT}<!-- IF FORUM_GALLERY_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+						<!-- IF FTVG_ENABLE -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_VIEW_GOAL} <strong>{FORUM_VIEW_GOAL}</strong></td>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_VIEWS} <strong>{TOTAL_VIEWS}</strong></td>
+							<td style="width: 160px; font-size:12px;"><!-- IF FORUM_VIEW_PERCENT < 100 -->{L_GOAL_REMAINING} <strong>{FORUM_VIEW_REST}</strong><!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_<!-- IF FORUM_VIEW_PERCENT < 34 -->red<!-- ELSEIF FORUM_VIEW_PERCENT < 67 -->yellow<!-- ELSEIF FORUM_VIEW_PERCENT < 101 -->green<!-- ELSEIF FORUM_VIEW_PERCENT > 100 -->blue<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF FORUM_VIEW_PERCENT < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{FORUM_VIEW_PERCENT}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{FORUM_VIEW_PERCENT}<!-- IF FORUM_VIEW_PERCENT >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+						<!-- IF (DONATION_INDEX_ENABLE and S_DONATE_ENABLED and DONATION_INDEX_BOTTOM) and (DONATION_ACHIEVEMENT_ENABLE or DONATION_GOAL_ENABLE) -->
+						<tr>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_DONATION_GOAL} <strong>{DONATION_GOAL}</strong> {DONATION_GOAL_CURRENCY}</td>
+							<td style="width: 160px; font-size:12px;">{L_TOTAL_FORUM_DONATIONS} <strong>{DONATION_ACHIEVEMENT}</strong> {DONATION_GOAL_CURRENCY}</td>
+							<td style="width: 160px; font-size:12px;"><!-- IF DONATION_GOAL_NUMBER < 100 -->{L_GOAL_REMAINING} <strong>{DONATION_GOAL_REST}</strong> {DONATION_GOAL_CURRENCY}<!-- ELSE --><em>{L_GOAL_REMAINING_ZERO}</em> <img src="{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_ok.png" width="12" height="12" alt="" /><!-- ENDIF --></td>
+							<td><div style="background:url('{BOARD_URL}ext/dmzx/forumgoal/styles/prosilver/theme/images/forum_goal_grey.png') repeat-x; background-color: #cccccc; border: 1px solid black;border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; width:100%;"><div style="background:url('/forum_goal_<!-- IF DONATION_GOAL_NUMBER < 34 -->red<!-- ELSEIF DONATION_GOAL_NUMBER < 67 -->yellow<!-- ELSE -->green<!-- ENDIF -->.png') repeat-x;background-color: #008040; color: white; font-weight:bold;<!-- IF DONATION_GOAL_NUMBER < 100 --> border-right: 1px solid black;<!-- ENDIF --> max-width:100%;	width:{DONATION_GOAL_NUMBER}%; height:12px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;"><span style="padding-left:10px; font-size:10px; line-height:12px;">{DONATION_GOAL_NUMBER}<!-- IF DONATION_GOAL_NUMBER >= 5 -->%<!-- ENDIF --></span></div></div></td>
+						</tr>
+						<!-- ENDIF -->
+					</tbody>
+				</table>
+			</li>
+		</ul>
 	</div>
 </div>
 <!-- ENDIF -->

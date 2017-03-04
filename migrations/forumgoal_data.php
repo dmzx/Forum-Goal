@@ -11,7 +11,6 @@ namespace dmzx\forumgoal\migrations;
 
 class forumgoal_data extends \phpbb\db\migration\migration
 {
-
 	public function update_data()
 	{
 		return array(
