@@ -49,6 +49,4 @@ $lang = array_merge($lang, array(
 	'TOTAL_FORUM_VIEWS'			=> 'Total de Vues',
 	'TOTAL_FORUM_DONATION_GOAL'	=> 'Objectifs de Dons',
 	'TOTAL_FORUM_DONATIONS'		=> 'Total de Dons',
-	'TOTAL_FORUM_DONATION_GOAL'	=> 'Objectifs de Dons',
-	'TOTAL_FORUM_DONATIONS'		=> 'Total de Dons',
 ));
